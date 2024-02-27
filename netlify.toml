@@ -1,6 +1,6 @@
 # example netlify.toml
 [build]
-  #command = "CI='' yarn run build"
+  command = "yarn run build --filter frontend"
   #functions = "netlify/functions"
   #publish = "apps/frontend/.next"
 
@@ -35,4 +35,4 @@
   DXP_DEBUG = "0"
   QUERY_LOG = "0"
   FRONTEND_PUBLISH_TOKEN = "optly-PUBLISH_TOKEN"
-  DEBUG='*'
+  NETLIFY_USE_YARN=true
