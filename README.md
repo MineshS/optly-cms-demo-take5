@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 
 ## Introduction
-This repository contains the packages and applications that form the Optimizely CMS Demo Site.
+This hashed repository contains the packages and applications that form the Optimizely CMS Demo Site.
 
 ## Getting started
 Make sure you're good to go, by:
