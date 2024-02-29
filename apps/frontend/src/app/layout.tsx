@@ -11,7 +11,6 @@ import OdpScript from '@components/integrations/server/optimizely-data-patform'
 import RecsScript from '@components/integrations/server/optimizely-content-recs'
 import WebExScript from '@components/integrations/server/optimizely-web-experimentation'
 import GoogleAnalytics from '@/components/integrations/server/google-analytics'
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import './globals.css'
 
@@ -70,7 +69,6 @@ export default function RootLayout({ children }: RootLayoutProps)
             </GlobalProviders>
             { crecs_client && crecs_delivery && <RecsScript client={ crecs_client } delivery={ crecs_delivery } /> }
             { ga_id && <GoogleAnalytics measurementId={ ga_id } />}
-            <SpeedInsights />
         </body>
     </html>
 }

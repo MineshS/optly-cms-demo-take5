@@ -88,6 +88,7 @@ export const createSiteConfigModule = {
 };
 export default createSiteConfigModule;
 function siteQuery(site_url) {
+    console.log("Site Config Stuff")
     return {
         query: `query GetSiteConfig($domain: String!) {
             SiteDefinition (
