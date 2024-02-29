@@ -11,7 +11,6 @@ export function setupFactory() : ComponentFactory
     const factory = getFactory()
     factory.registerAll(pageComponents)
     factory.registerAll(blockComponents)
-    factory.register('a', Link as unknown as ComponentType )
     return factory
 }
 

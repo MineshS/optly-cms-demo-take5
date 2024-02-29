@@ -14,9 +14,6 @@ export const UserDesktopMenu : FunctionComponent<UserDesktopMenuProps> = ({ loca
     if (status == "loading")
         return <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6" />
 
-    if (data?.error == "tokenExpiredError")
-        return <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6"> Session error </div>
-    
     if (status == "authenticated")
         return <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
             <Link href="/profile" className="text-sm font-medium text-gray-700 hover:text-gray-800" locale={ locale }>
